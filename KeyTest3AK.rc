@@ -1,0 +1,181 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "KeyTest3AK.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDM_MAIN_MENU RCDATA 
+BEGIN
+    0x0066, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0018, 0x019a, 0x0000, 0x0000, 
+    0xfffe, 0x9c52, 0x0004, 0x0018, 0x9c54, 0x0000, 0x0001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MAIN_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        POPUP "Show"
+        BEGIN
+            MENUITEM "WM_KEYDOWN",                  ID_FILE_SHOW_WMKEYDOWN, CHECKED
+            MENUITEM "WM_KEYUP",                    ID_FILE_SHOW_WMKEYUP, CHECKED
+            MENUITEM "WM_CHAR",                     ID_FILE_SHOW_WMCHAR, CHECKED
+            MENUITEM "WM_MOUSEMOVE",                ID_FILE_SHOW_WMMOUSEMOVE
+            MENUITEM "WM_LBUTTONDOWN",              ID_FILE_SHOW_WMLBUTTONDOWN
+            MENUITEM "WM_LBUTTONDBLCLK",            ID_FILE_SHOW_WMLBUTTONDBLCLK
+            MENUITEM "WM_LBUTTONUP",                ID_FILE_SHOW_WMLBUTTONUP
+        END
+        MENUITEM "Use GX API",                  ID_USEGX
+        MENUITEM "Use AllKeys()",               ID_AllKeys
+        MENUITEM "Log to file",                 ID_FILE_LOGTOFILE
+        MENUITEM "Exit",                        IDM_EXIT
+    END
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Suspend GX",                  ID_ACTION_SUSPENDGX
+        MENUITEM "Resume GX",                   ID_ACTION_RESUMEGX
+        MENUITEM "RegisterHotKeys",             ID_ACTION_REGISTERHOTKEYS
+        MENUITEM "UnregisterFunc1",             ID_ACTION_UNREGISTERFUNC1
+        MENUITEM "Clear List",                  ID_ACTION_CLEARLIST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 134, 75
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE 0x80000000L
+CAPTION "About KeyTest3AK"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_ICON,IDC_STATIC,11,17,20,20
+    LTEXT           "KeyTest3AK Version 3.0",IDC_STATIC,40,10,88,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005 / 2015",IDC_STATIC,40,25,89,8
+    LTEXT           "Uses GAPI",IDC_STATIC,4,44,44,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 80
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CLASSNAME           "KeyTest3AK"
+    IDS_HELLO               "Hello World!"
+    IDC_KeyTest3AK          "KeyTest3AK"
+    IDS_WINDOWNAME          "KeyTest3AK"
+    IDS_APPNAME             "KeyTest3AK.exe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_MENUITEM1      "File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_ACTION          "Action"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
